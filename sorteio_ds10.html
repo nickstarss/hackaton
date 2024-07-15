@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./icon/favicon-16x16.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>FIVE'S</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/da1962aea0.js" crossorigin="anonymous"></script>
+    <script defer src="./js/sortearFuncao.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="./index.html"><img src="./img/logo.svg"width="120px" alt="FIVE'S"></a>
+        </div>
+    </header>
+
+    <div class="menu-container">
+    <nav>
+      <ul>
+        <li><a href="./turmas.html"> TURMAS</a></li>
+            <li><a href="./sorteador_geral.html"> SORTEADOR <i class="fa-solid fa-caret-down"></i></a>
+        <ul>
+            <li><a href="./ranking.html">RANKING</a></li>
+        </ul>
+        </li>
+
+        <li><a href="./treinamento.html">TREINAMENTO<i class="fa-solid fa-caret-down"></i></a>
+        <ul>
+            <li><a href="treinamento.html">BTC</a></li>
+            <li><a href="">ETS</a></li>
+        </ul>
+        </li>
+        
+        <li><a href="./treinamento.html">RANKING<i class="fa-solid fa-caret-down"></i></a>
+            <ul>
+                <li><a href="./ranking.html">INDIVIDUAL</a></li>
+                <li><a href="./ranking_turmas.html">TURMAS</a></li>
+            </ul>
+        </li>
+            <li><a href="./sobrenos.html">SOBRE NÓS</a></li>
+      </ul>
+    </nav>
+    </div>
+
+    <div id="sorteador_titulo">
+        <h1>5Sorteador</h1>
+        <h2>Sala 9</h2>
+    </div>
+    <h2 id="semana"></h2>
+    <script>
+        const date = new Date()
+        const data_formatada = moment(date).format('DD/MM');
+        document.getElementById("semana").innerHTML = "Semana do dia " + data_formatada
+    </script>
+    <div id="tabelas">
+        <table border="1" id="tabela_funcoes">
+            <tr>
+                <th id="a">Nome</th>
+                <th id="b">Função</th>
+            </tr>
+            <tr>
+                <td>Ana Luiza</td>
+                <td id="sortear_tabela"><strong></strong></td>
+            </tr>
+            <tr>
+                <td>Betman Octavio</td>
+                <td id="sortear_tabela"><strong></strong></td>
+            </tr>
+            <tr>
+                <td>Davi Lima</td>
+                <td id="sortear_tabela"><strong></td>
+            </tr>
+            <tr>
+                <td>Daniel Souza</td>
+                <td id="sortear_tabela"><strong></strong></td>
+            </tr>
+            <tr>
+                <td>Emanuelle Jesus</td>
+                <td id="sortear_tabela"><strong></strong></td>
+            </tr>
+            <tr>
+                <td>Igor Bedon</td>
+                <td id="sortear_tabela"><strong></strong></td>
+            </tr>
+            <tr>
+                <td>Isabela Pereira</td>
+                <td id="sortear_tabela"><strong></strong></td>
+            </tr>
+            <tr>
+                <td>Isabelli Marques</td>
+                <td id="sortear_tabela"><strong></strong></td>
+            </tr>
+        </table>
+    
+        <table border="1" id="tabela_funcoes">
+            <tr>
+                <th id="a">Nome</th>
+                <th id="b">Função</th>
+            </tr>
+            <tr>
+                <td>Juliana Verneck</td>
+                <td id="sortear_tabela"><strong></strong></td>
+            </tr>
+            <tr>
+                <td>Kamila Ingrid</td>
+                <td id="sortear_tabela"><strong></strong></td>
+            </tr>
+            <tr>
+                <td>Leticia Cardoso</td>
+                <td id="sortear_tabela"><strong></strong></td>
+            </tr>
+            <tr>
+                <td>Maria Eduarda</td>
+                <td id="sortear_tabela"><strong></strong></td>
+            </tr>
+            <tr>
+                <td>Manuelly Tristão</td>
+                <td id="sortear_tabela"><strong></td>
+            </tr>
+            <tr>
+                <td>Maria Luiza</td>
+                <td id="sortear_tabela"><strong></strong></td>
+            </tr>
+            <tr>
+                <td> Vinicius Lira</td>
+                <td id="sortear_tabela"><strong></strong></td>
+            </tr>
+            <tr>
+                <td>Vitória</td>
+                <td id="sortear_tabela"><strong></strong></td>
+            </tr>
+        </table>
+    </div>
+    <div id="default">
+        <div id="texto_default">
+            <i class="fa-solid fa-broom" style="color: #d6d6d6;" id="vassoura_default"></i>
+            <h1>Sorteie o que cada pessoa da</h1>
+            <h1>sala irá fazer essa semana...</h1>
+            <button onclick="sortearFuncao()" id="mostrar_tabela"><strong>Sortear</strong></button>
+        </div>
+    </div>
+    
+    <footer id="footer">
+               
+        <div class="rodape2">
+           
+            <div id="rp_logo">
+                <div class="logobosch">
+                    <img class="logo_bosch" src="./img/logo_bosch.svg" width="5%" height="5%">
+                </div>
+
+            </div> 
+        </div>
+
+        <div class="barrinha">
+            <img src="./img/Barra.png" width="100%">
+        </div>
+
+       
+    </footer>        
+
+</body>
+</html>

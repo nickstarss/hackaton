@@ -1,0 +1,409 @@
+*{
+    font-family: Open Sans;
+}
+
+:root{
+    --cor-fundo :  #b8f1ff;
+    --cor-hover : #141414;
+    --cor-fundo-hover : #ffffff;
+    --cor-primaria: rgb(255, 255, 255);
+  }   
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #ffffff;
+    background-position: top center;
+    background-attachment: scroll;
+    background-repeat: repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-style: solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-width: 1px;
+    border-color: #b4b4b4;
+    background-color: white;
+    box-shadow: 1px 1px 7px #474747; 
+    z-index: 1;
+}
+
+.menu-container {
+    padding-top: 90px;
+    display: table;
+    height: 40px;
+    width: 100%;
+    background-color: #ffffff;
+  }
+.menu-container nav{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+.menu-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+.menu-container li {
+    display: inline-block;
+  }
+  
+.menu-container a {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    color: #000000;
+    text-decoration: none;
+  }
+.menu-container a:hover{
+    text-decoration: none;
+  }
+  
+.menu-container a:before, a:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 40px;
+    bottom: 0;
+    background-color: #fff;
+    color: #000;
+  }
+  
+.menu-container a:before {
+    left: 0;
+  }
+.menu-container a:after {
+    right: 0;
+    background: green;
+    opacity: .2;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+.menu-container a:hover:before {
+    background: #3095B5;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    opacity: .2;
+  }
+  
+.menu-container a:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+  }
+  
+  
+  
+.menu-container ul li {
+      display: inline;
+      position: relative;
+    }
+  
+.menu-container ul li a {
+      position: relative;
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px;
+    }
+  
+.menu-container ul ul{
+      display: none;
+      position: absolute;
+      width: 150px;
+      left: 0;
+      background-color: #fff;
+    }
+    
+.menu-container ul li:hover ul{
+      display: block;
+    }
+    
+.menu-container ul ul li a{
+      display: block;
+    }
+
+    /* Sub Menu */
+
+.menu-container ul ul{
+    display: none;
+    position: absolute;
+    width: 150px;
+    left: 0;
+  
+  }
+  
+.menu-container ul li:hover ul{
+    display: block;
+  }
+  
+.menu-container ul ul li a{
+    display: block;
+  }
+
+/*pagina do sorteador de ds09*/
+#sorteador_titulo{
+    display: flex;
+    margin-left: 45px;
+}
+
+#sorteador_titulo h2{
+    margin-top: 30px;
+    margin-left: 80%;
+}
+
+#tabelas{
+    display: none;
+}
+
+#tabela_funcoes{
+    width: 1000px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: none;
+}
+
+#tabela_funcoes tr{
+    border: none;
+    text-align: center;
+    height: 50px;
+    background-color: rgba(192, 148, 188, 0.87);
+    color: #ffffff;
+}
+
+#tabela_funcoes td{
+    border: none;
+    font-size: 18px;
+}
+
+#tabela_funcoes th{
+    background-color: #662E60;
+    color: #ffffff;
+    height: 80px;
+}
+
+#a {
+    border-radius: 10px 0px 0px 0px;
+}
+
+#b {
+    border-radius: 0px 10px 0px 0px;
+}
+
+#semana{
+    margin-left: 80.4%;
+    color: #535A7C;
+}
+
+#funcao_simbolo {
+    margin-right: 20px;
+}
+
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #439E33;
+  }
+  
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #439E33;  /* BARRA DE SCROLLAR*/
+    border-radius: 10px;
+}
+
+i#vassoura_default{
+    font-size: 450px;
+    margin-left: 42%;
+    margin-top: 5%;
+}
+
+#texto_default h1{
+    text-align: center;
+    color: #cecfd3;
+}
+
+#texto_default button{
+    background-color: #4AA2BE;
+    color: white;
+    border: none;
+    width: 300px;
+    font-size: 35px;
+    border-radius: 25px;
+    margin-left: 42%;
+    margin-top: 15px;
+}
+
+#texto_default button:hover{
+  background-color: #66c0db;
+  transition: 0.3s;
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    height: 100;
+    position: absolute;
+    margin-top: 7%;
+    left: 0;
+}
+.doc{
+    margin-left: 1%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.doc a{
+    margin-left: 5%;
+    text-decoration: none;
+    color: #000;
+}
+.logobosch img{
+    display: flex;
+    justify-content:end;
+    margin-left: 95%;
+    margin-top: 30px;
+}
+
+/*PAGINA SORTEADOR GERAL*/
+#cursos{
+    margin-left: 40%;
+    margin-top: 5%;
+    margin-right: 40%;
+    text-align: center;
+}
+
+section details summary{
+    background-color: #662E60;
+    padding: 2%;
+    
+    margin-bottom: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+section details a{
+  background-color: #dfd2dd;
+  color: #923f8a;
+  
+}
+
+section details{
+  margin-bottom: 50px;
+  background-color: #dfd2dd;
+  border-radius: 10px;
+}
+
+section details a:hover{
+  color: #ec88e2;
+  transition: 0.3s;
+}
+
+#curso1{
+  margin-bottom: 20px;
+}
+
+#curso_summary2{
+  background-color: #3095B5;
+}
+
+#curso_details2{
+  background-color: #bee9f7;
+}
+
+#curso_details2 a{
+  background-color: #bee9f7;
+  color: #3095B5;
+}
+
+#curso_details2 a:hover{
+  color: #59cbee;
+}
+
+#curso_summary3{
+  background-color: #B82323;
+}
+
+#curso_details3{
+  background-color: #f8a8a8;
+}
+
+#curso_details3 a{
+  background-color: #f8a8a8;
+  color: #B82323;
+}
+
+#curso_details3 a:hover{
+  color: #fc4e4e;
+}
+
+#curso_summary4{
+  background-color: #439E33;
+}
+
+#curso_details4{
+  background-color: #c1fab7;
+}
+
+#curso_details4 a{
+  background-color: #c1fab7;
+  color: #328623;
+}
+
+#curso_details4 a:hover{
+  color: #6ac759;
+}
+
+/*SORTEADOR DIGITAL SOLUTIONS*/
+#sala{
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: white;
+    text-decoration: none;
+    background-color: #8d3b85;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 5px;
+}
+
+#sala a{
+    text-decoration: none;
+    color: white;
+}
+
+#sala:hover{
+    background-color: #662E60;
+    transition: 0.3s;
+}
