@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./icon/favicon-16x16.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/turmas.css">
+    <link rel="stylesheet" href="">
+    <script src="./js/turmas.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+    <title>TURMAS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <header class="header">
+        <div class="logo">
+            <a href="./index.html"><img src="./img/logo.svg"width="120px" alt="FIVE'S"></a>
+        </div>
+    </header>
+
+    <div class="menu-container">
+    <nav>
+      <ul>
+        <li><a href="./turmas.html"> TURMAS</a></li>
+            <li><a href="./sorteador_geral.html"> SORTEADOR <i class="fa-solid fa-caret-down"></i></a>
+   
+        <ul>
+    
+        </ul>
+        </li>
+
+        <li><a href="./treinamento.html">TREINAMENTO<i class="fa-solid fa-caret-down"></i></a>
+        <ul>
+            <li><a href="treinamento.html">BTC</a></li>
+            <li><a href="">ETS</a></li>
+        </ul>
+        </li>
+
+        <li><a href="./treinamento.html">RANKING<i class="fa-solid fa-caret-down"></i></a>
+            <ul>
+                <li><a href="./ranking.html">INDIVIDUAL</a></li>
+                <li><a href="./ranking_turmas.html">TURMAS</a></li>
+            </ul>
+        </li>
+        
+            <li><a href="./sobrenos.html">SOBRE NÓS</a></li>
+      </ul>
+    </nav>
+    </div>
+        <div class="checklist">
+            <div id="tarefas">
+                <h1>TURMAS E  TAREFAS</h1>
+            </div>
+            <div class="retangulo3">
+                <form>
+                <div class="options-row">
+                <div class="label-option">
+                <label for="turma">Turma:</label>
+                <select id="turma">
+                <option value="Selecione uma opção">Selecione uma opção</option>
+                <option value="DS8">DS 8</option>
+                <option value="DS9">DS 9</option>
+                <option value="DS10">DS 10</option>
+                </select>
+                </div>
+                <div class="label-option">
+                <label for="aprendiz">Aprendiz:</label>
+                <select id="aprendiz">
+                <option value="Selecione uma opção">Selecione uma opção</option>
+                <option value="Emanuelle">Emanuelle</option>
+                <option value="Ana Mária">Ana Mária</option>
+                <option value="Aprendiz 1">Aprendiz 1</option>
+                <option value="Aprendiz 2">Aprendiz 2</option>
+                <option value="Marcela">Marcela</option>
+                <option value="Juliana V.">Juliana V.</option>
+                <option value="Juliana J.">Juliana J.</option>
+                <option value="Letícia">Letícia</option>
+                <option value="Giuliana">Giuliana</option>
+                </select>
+                </div>
+                <div class="label-option">
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data">
+                </div>
+                </div>
+                    
+                        <p><label>Tarefas Realizadas:</label></p>
+                        <br>
+                        <div class="maior">
+                            
+                            <div class="group">
+                            <label for="xd">Limpar mesa do instrutor</label>
+                            <input type="checkbox" id="xd" />
+                            </div>
+                            <div class="group">
+                            <label for="xd">Limpar os lockers</label>
+                            <input type="checkbox" id="xd" />
+                            </div>
+                            <div class="group">
+                            <label for="xd">Limpar mesa individual</label>
+                            <input type="checkbox" id="xd" />
+                            </div>
+                            <div class="group1">
+                            <label for="xd">Varrer a sala</label>
+                            <input type="checkbox" id="xd" />
+                            </div>
+                            <div class="group1">
+                            <label for="xd">Verificar etiquetas</label>
+                            <input type="checkbox" id="xd" />
+                            </div>
+                            <div class="group">
+                            <label for="xd">Limpar a TV</label>
+                            <input type="checkbox" id="xd" />
+                            </div>
+                            <div class="group">
+                            <label for="xd">Realizar 5s Digital</label>
+                            <input type="checkbox" id="xd" />
+                            </div>
+                            <div class="group">
+                                <label for="xd">Outros:</label>
+                                <input type="checkbox" id="xd" />
+                                </div>
+                            <div class="group1">
+                            <label for="xd">Arrumar os fios</label>
+                            <input type="checkbox" id="xd" />
+                            </div>
+                            
+                            </div>
+                            <br>
+                            <br>
+                        <div class="obs">
+                          <label for="observação"><p>Observação:</p></label>
+                            <textarea id="observação" name="observação"></textarea>
+                        </div>
+                        <div class="botao_form">
+                            <button type="button" id="click">SALVAR</button>
+                        </div>
+                       
+                      </form>
+                      
+                      
+                      
+                </div>
+                   
+                    
+            </div>
+            </div>
+           
+        </div>
+        <footer id="footer">
+  
+               
+            <div class="rodape2">
+               
+                <div id="rp_logo">
+                    <div class="logobosch">
+                        <img class="logo_bosch" src="./img/logo_bosch.svg" width="5%" height="5%">
+                    </div>
+
+                </div> 
+            </div>
+
+            <div class="barrinha">
+                <img src="./img/Barra.png" width="100%">
+            </div>
+
+           
+                
+        </footer>       
+</body>
+<script>
+    $("#click").on('click', function(){
+        // Limpar campos do formulário
+        $("#turma").val('Selecione uma opção');
+        $("#aprendiz").val('Selecione uma opção');
+        $("#data").val('');
+        $('input[type="checkbox"]').prop('checked', false);
+        $("#observação").val('');
+        // Adicionar a mensagem de realizado
+        Swal.fire({
+            title: "Bom trabalho!",
+            text: "Informações salvas",
+            icon: "success"
+        });
+    });
+ </script>
+</html>

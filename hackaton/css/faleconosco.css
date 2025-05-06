@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=La+Belle+Aurore&family=Quicksand:wght@400&family=Rubik+Vinyl&family=Satisfy&display=swap');
+:root{
+    --cor-fundo :  #b8f1ff;
+    --cor-hover : #141414;
+    --cor-fundo-hover : #ffffff;
+    --cor-primaria: rgb(245, 245, 245);
+  }   
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand';
+}
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #fff;
+    background-position: top center;
+    background-attachment: scroll;
+    background-repeat: repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+/* Página de Login */ 
+.login-page{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 100px;
+    
+  }
+  
+  .register-input-container {
+  width: 400px;
+  height: 150px;
+  border: solid 1px #868686;
+  border-radius: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 1px 1px 4px #b9b9b9;
+  background-color: #ffffff;
+  padding: 30px;
+  }
+  
+  .login-input-container input{
+  width: 180px;
+  }
+  
+  .register-input-container h1 {
+  color: #474747;
+  margin-bottom: 20px;
+  font-size: x-large;
+  }
+  
+  .login-input-container {
+  width: 400px;
+  height: 350px;
+  border: solid 1px #868686;
+  border-radius: 1em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 1px 1px 4px #b9b9b9;
+  background-color: #ffffff;
+  padding: 30px;
+  }
+  
+  
+  .login-input-container h1{
+  color: #474747;
+  left: 50%;
+  }
+  
+  .login-input-container input{
+  padding: 10px;
+  border: solid 1px #868686;
+  outline: none;
+  border-radius: 8px;
+  }
+  
+  .login-input-container a{
+  font-size: 13px;
+  color: #868686;
+  }
+  
+  .login-input-container a:hover{
+  color: #0d8109;
+  }
+  
+  .login-input-btn {
+  padding: 8px 21px;
+  border: solid 1px #5e5e5e;
+  border-radius: 10px;
+  background-color:white;
+  cursor: pointer;
+  font-size: 15px;
+  }
+  
+  .login-input-btn:hover {
+  background-color:#662E60;
+  color: #fff;
+  }
+  
+  
+  .bolha {
+    position: absolute;
+    background-color: #662E60;
+    border-radius: 50%;
+    animation: subir 10s linear infinite;
+  }
+  
+  .bolha2,
+  .bolha3,
+  .bolha4 {
+    position: absolute;
+    background-color: #662e607e;
+    border-radius: 50%;
+    animation: subir 8s linear infinite;
+  }
+  
+  .bolha2::before,
+  .bolha3::before,
+  .bolha4::before {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: #662e607e;
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: expandir 8s ease-in-out infinite;
+  }
+
+  .bolha5,
+  .bolha6,
+  .bolha7 {
+    position: absolute;
+    background-color: #439e3373;
+    border-radius: 50%;
+    animation: subir 8s linear infinite;
+  }
+  
+  .bolha5::before,
+  .bolha6::before,
+  .bolha7::before {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: #439e3373;
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: expandir 8s ease-in-out infinite;
+  }
+
+  .bolha8,
+  .bolha9,
+  .bolha10 {
+    position: absolute;
+    background-color: #4aa3be6e;
+    border-radius: 50%;
+    animation: subir 8s linear infinite;
+  }
+  
+  .bolha8::before,
+  .bolha9::before,
+  .bolha10::before {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: #4aa3be6e;
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: expandir 8s ease-in-out infinite;
+  }
+  
+  .bolha{
+    top: 90vh;
+    left: 30vw;;
+  }
+  
+  .bolha2{
+    top: 50vh;
+    left: 70vw;;
+  }
+  
+  .bolha3{
+    top: 80vh;
+    left: 10vw;;
+  }
+  
+  .bolha4{
+    top: 90vh;
+    left: 40vw;;
+  }
+  
+  .bolha5{
+    top: 15vh;
+    left: 50vw;;
+  }
+  
+  .bolha6{
+    top: 40vh;
+    left: 80vw;;
+  }
+  
+  .bolha7{
+    top: 10vh;
+    left: 90vw;;
+  }
+  
+  .bolha8{
+    top: 20vh;
+    left: 75vw;;
+  }
+  
+  .bolha9{
+    top: 80vh;
+    left: 25vw;;
+  }
+  
+  .bolha10{
+    top: 100vh;
+    left: 70vw;;
+  }
+  
+  @keyframes subir {
+   0% {
+    transform: translateY(100vh);
+   }
+   100% {
+    transform: translateY(-100vh);
+   }
+  }
+  
+  @keyframes expandir {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.0);
+    }
+  }
+  
+  
